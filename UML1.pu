@@ -1,0 +1,15 @@
+@startuml
+start
+:画像のダウンロード;
+:画像のRGB成分を抽出;
+if(Rを選択)then(Yes)
+    :R成分のみの画像を表示;
+elseif(Gを選択)then(Yes)
+    :G成分のみの画像を表示;
+elseif(Bを選択)then(Yes)
+    :B成分のみの画像を表示;
+else(No)
+    :通常の画像を表示;
+endif
+stop
+@enduml
